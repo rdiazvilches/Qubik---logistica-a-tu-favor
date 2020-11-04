@@ -1,0 +1,474 @@
+/* ----- ----- NAVBAR ----- ----- */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #473892;
+  color: #1DC0B2;
+  transition: .5s;
+  text-decoration: none;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.logo {
+  max-width: 30%;
+}
+.logo-nav{
+  max-width: 5%;}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+    
+  }
+  .logo {
+    max-width: 30%;
+  }
+  .logo-nav{
+    max-width: 5%;
+  }
+}
+@media (max-width: 858px){
+  .logo {
+    max-width: 30%;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #473892;
+    opacity: 0.9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+ 
+  background-size: cover;
+  
+}
+
+
+/* ----- ----- NAVBAR ----- ----- */
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 16px; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* ----- ----- HEADER ----- ----- */
+header {
+  background: url(../img/bg.png), #019851;
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat; }
+  header .contenedor_logo_menu {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+    header .contenedor_logo_menu .logo a {
+      display: block; }
+      header .contenedor_logo_menu .logo a img {
+        vertical-align: top; }
+    header .contenedor_logo_menu .menu {
+      text-align: right;
+      line-height: 50px; }
+      header .contenedor_logo_menu .menu a {
+        color: #fff;
+        margin-left: 60px;
+        font-size: 18px; }
+  header .textos {
+    color: #fff;
+    text-align: center;
+    margin: 200px 0; }
+    header .textos .primera_linea, {
+      font-family: "Open Sans", Arial, Sans-serif;
+      font-weight: 600;
+    }
+    header .textos .segunda_linea {
+      font-family: "Syncopate", Arial, Sans-serif;
+      font-weight: 300; 
+    margin-top: 50px;}
+      
+    header .textos .primera_linea {
+      font-size: 60px;
+      line-height: 35px;
+      margin-bottom: 50px; }
+    header .textos .segunda_linea {
+      font-size: 40px;
+      
+      margin-bottom: 60px;
+    padding-top: 20px; }
+    header .textos .contenedor-btns a {
+      border-radius: 4px;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 0;
+      font-weight: 600;
+      width: 235px;
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px; }
+      header .textos .contenedor-btns a:hover {
+        text-decoration: none;
+        background: #fff;
+        color: #4f4f4f; }
+
+/* ----- ----- MAIN ----- ----- */
+.main .caracteristicas {
+  background-color: #f2f2f2;
+  padding: 70px 0; }
+  .main .caracteristicas .titulo {
+    text-align: center;
+    font-family: "Open Sans", Arial, Sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(68, 68, 68);
+    margin-bottom: 70px; }
+  .main .caracteristicas .caracteristica {
+    text-align: center; }
+    .main .caracteristicas .caracteristica .icono {
+      vertical-align: top;
+      margin-bottom: 30px;
+    max-width: 50%; }
+    .main .caracteristicas .caracteristica .primera_linea {
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-size: 20px; }
+    .main .caracteristicas .caracteristica .parrafo {
+      margin-bottom: 30px;
+      line-height: 28px; }
+
+    .main .clientes .iconocliente {
+      max-width: 40%;
+    }
+.main .fotos {
+  background-color: #f2f2f2;
+  }
+  .main .fotos .foto {
+    margin-bottom: 20px; }
+    .main .fotos .foto .thumb img {
+      border-radius: 8px;
+      width: 100%;
+      vertical-align: top; }
+    .main .fotos .foto .titulo {
+      margin-top: 70px;
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700; }
+      .main .fotos .foto .titulo.azul {
+        color: #4facd3; }
+      .main .fotos .foto .titulo.naranja {
+        color: #ddb146; }
+    .main .fotos .foto .parrafo {
+      line-height: 28px; }
+    .main .fotos .foto .derecha {
+      text-align: right; }
+.main .clientes {
+  background: #473892;
+  padding: 40px 0; }
+  .main .clientes .titulo {
+    text-align: center;
+    font-family: "Open Sans", Arial, Sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px; }
+  .main .clientes .cliente {
+    text-align: center; }
+    .main .clientes .cliente a {
+      display: block; }
+
+.main .nuestro-equipo {
+  background: #4f4f4f;
+   
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.texto-nuestroequipo {
+  color: #fff;
+}
+  .main .nuestro-equipo .foto {
+    margin-bottom: 20px; }
+    .main .nuestro-equipo .foto .nuestro-equipo-foto img {
+      border-radius: 8px;
+      width: 100%;
+      vertical-align: top; }
+    .main .nuestro-equipo .foto .titulo {
+      margin-top: 70px;
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700; }
+      .main .nuestro-equipo .foto .titulo.azul {
+        color: #4facd3; }
+      .main .nuestro-equipo .foto .titulo.naranja {
+        color: #ddb146; }
+    .main .nuestro-equipo .foto .parrafo {
+      line-height: 28px; }
+    .main .nuestro-equipo .foto .derecha {
+      text-align: right; }
+
+      .parrafo-beneficios {
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+
+/* ----- ----- FOOTER ----- ----- */
+footer .direccion {
+  background: #E9FFEE;
+  padding: 30px 0;
+  color: #473892; }
+  footer .direccion .titulo {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  footer .direccion .calle,
+  footer .direccion .telefono,
+  footer .direccion .correo {
+    margin-bottom: 10px; }
+  footer .direccion .logo img {
+    margin-top: 70px; }
+footer .social {
+  background-color: #E9FFEE ;
+  text-align: center;
+  padding: 20px 0; }
+  footer .social a {
+    padding: 10px;
+    display: inline-block;
+    margin: 0 20px;
+    width: 50px;
+    font-size: 22px;
+    color: #fff;
+    background: #000;
+    border-radius: 100px; }
+    footer .social a:hover {
+      text-decoration: none; }
+    footer .social a.facebook {
+      background: #3b5998; }
+    footer .social a.gmail {
+      background: #ea4335; }
+    footer .social a.instagram {
+      background: #405de6; }
+
+
+
+      .col-xs-5,
+
+      .col-sm-5,
+      
+      .col-md-5,
+      
+      .col-lg-5 {
+      
+        min-height: 1px; 
+      
+        position: relative;
+      
+      }
+      
+      .col-xs-5 {
+      
+        float: left;
+      
+        width: 20%;
+      
+      }
+
+@media screen and (max-width: 992px) {
+  header .contenedor_logo_menu .logo {
+    margin-bottom: 20px;
+    text-align: center; }
+  header .contenedor_logo_menu .menu {
+    text-align: center; }
+    header .contenedor_logo_menu .menu a {
+      margin: 0 20px; }
+  header .textos {
+    margin: 50px 0;
+    font-size: 16px; }
+    header .textos .primera_linea {
+      font-size: 1.5em;
+    margin-bottom: 10px; }
+    header .textos .segunda_linea {
+      font-size: 25px; }
+    header .textos .contenedor-btns a {
+      margin-bottom: 10px; }
+
+  .main .fotos .foto .titulo {
+    margin-top: 0; }
+  .main .clientes .cliente {
+    margin-bottom: 40px; } 
+    .col-md-4 .logo-footer {
+      max-width: 50%;
+    }}
+@media screen and (max-width: 768px) {
+  .header .textos .primera_linea {
+    font-size: 60px;
+    line-height: 35px;
+    margin-bottom: 10px;}
+  .main .caracteristicas .caracteristica {
+    margin-bottom: 40px; }
+  .main .fotos .foto {
+    text-align: center; }
+    .main .fotos .foto .texto * {
+      text-align: left; }
+    .main .fotos .foto .texto p {
+      margin-bottom: 10px; }
+  .main .nuestro-equipo .foto {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .main .nuestro-equipo .texto-nuestroequipo .texto-texto-nuestroequipo p {
+    text-align: center;
+  }
+  footer .direccion {
+    text-align: center; }
+    footer .direccion .logo img {
+      margin-top: 20px; } 
+      .main .nuestro-equipo .col-xs-8 {
+        width: 100%;
+    }
+    .col-md-4 .logo-footer {
+      max-width: 50%;
+    }
+    
+    }
+      
+
+
+      @media screen and (max-width: 768px) {
+        .col-md-12 .nuestro-equipo-foto {
+          width: 100%;
+        }
+        .logo {
+          max-width: 25%;
+        }
+       /* .clientes .col-xs-4 {
+          width: 50%;
+      } */
+        .col-md-4 .logo-footer {
+          max-width: 50%;
+        }
+        .main .clientes .iconocliente {
+          max-width: 70%;
+        }
+          .col-xs-8 .texto-nuestroequipo .texto-texto-nuestroequipo {
+            width: 100%;
+            margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+          }
+        
+          .nuestro-equipo-foto {
+            padding: 20px;
+          }
+        .col-xs-8 {
+    width: 66.66666667%;
+}
+
+        .col-xs-5 {
+      
+          
+      
+          width: 100%;
+      
+        }
+        .col-md-5 {
+      
+          
+      
+          width: 100%;
+      
+        }
+        .logo-nav{
+          max-width: 10%;}
+      }
+      
+/*# sourceMappingURL=estilos.css.map */
